@@ -1,0 +1,26 @@
+{
+  "name": "bryanjhv/laravel-blade-cdn",
+  "description": "Blade directive to get asset URLs according to environment.",
+  "type": "library",
+  "keywords": [
+    "laravel",
+    "blade",
+    "cdn",
+    "directive",
+    "asset",
+    "url"
+  ],
+  "homepage": "https://github.com/bryanjhv/laravel-blade-cdn",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Bryan Horna",
+      "email": "bryanjhv@gmail.com",
+      "homepage": "https://bryanjhv.xyz",
+      "role": "developer"
+    }
+  ],
+  "support": {
+    "source": "https://github.com/bryanjhv/laravel-blade-cdn.git"
+  }
+}
