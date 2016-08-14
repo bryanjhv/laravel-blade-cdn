@@ -22,5 +22,13 @@
   ],
   "support": {
     "source": "https://github.com/bryanjhv/laravel-blade-cdn.git"
+  },
+  "require": {
+    "illuminate/support": "^5.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Bryanjhv\\BladeCdn\\": "src/"
+    }
   }
 }
