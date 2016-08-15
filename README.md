@@ -28,6 +28,12 @@ php artisan vendor:publish --provider="Bryanjhv\BladeCdn\BladeCdnServiceProvider
 
 ## Usage
 
+**Important**: First at all, please remove all your cached views, using:
+
+```bash
+php artisan view:clear
+```
+
 The service provider makes the `@cdn` Blade directive available, so you can use
 it like so (working on `resources/views/sample.blade.php`):
 
