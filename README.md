@@ -47,24 +47,21 @@ it like so (working on `resources/views/sample.blade.php`):
 The above code will be expanded, in production, using the default configuration
 file the package ships with, to:
 
-```html
+```php
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
 <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script src="[APP_URL]/js/main.js"></script>
+<script src="<?php echo asset('js/main.js'); ?>"></script>
 ```
 
 Or, in any other environment, to:
 
-```html
-<link rel="stylesheet" href="[APP_URL]/css/bootstrap.min.css" />
-<script src="[APP_URL]/js/jquery.min.js"></script>
-<script src="[APP_URL]/js/bootstrap.min.js"></script>
-<script src="[APP_URL]/js/main.js"></script>
+```php
+<link rel="stylesheet" href="<?php echo asset('css/bootstrap.min.css'); ?>" />
+<script src="<?php echo asset('js/jquery.min.js'); ?>"></script>
+<script src="<?php echo asset('js/bootstrap.min.js'); ?>"></script>
+<script src="<?php echo asset('js/main.js'); ?>"></script>
 ```
-
-In both cases, `[APP_URL]` is expanded to your application URL using the `asset`
-Laravel helper.
 
 Of course, you may define any custom alias and prefix after publishing the
 configuration by editing the `config/blade-cdn.php` file.

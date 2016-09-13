@@ -43,7 +43,7 @@ class BladeCdnServiceProvider extends ServiceProvider
             if ($production && strpos($url, '//') === false) {
                 $url = $prefix.$url;
             } else {
-                $url = asset($url);
+                $url = '<?php echo asset(\''.$url.'\'); ?>';
             }
 
             return $url;
